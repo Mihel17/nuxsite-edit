@@ -1,0 +1,74 @@
+body {
+  div.zohoWrapper.active {
+    display: grid;
+    background: linear-gradient(332.47deg, rgba(2, 0, 40, 0.2) 14.92%, rgba(64, 0, 200, 0.2) 97.67%);
+    backdrop-filter: blur(30px);
+    z-index: 100;
+    overflow-y: scroll;
+    padding: 15px;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+
+    & {
+      scrollbar-width: none;
+      overflow: -moz-scrollbars-none;
+      -ms-overflow-style: none;
+    }
+
+    & > div.crmWebToEntityForm {
+      width: 100% !important;
+      margin: auto !important;
+      backdrop-filter: none;
+
+      input:not(.formsubmit),
+      span.select2,
+      textarea {
+        background: rgba(white, 0.9);
+        color: rgba(black, 0.9) !important;
+      }
+
+      input {
+        &::-webkit-input-placeholder {
+          color: black;
+          opacity: 0.4;
+        }
+
+        &::-moz-placeholder {
+          opacity: 0.4;
+        }
+
+        &:-moz-placeholder {
+          color: black;
+          opacity: 0.4;
+        }
+
+        &:-ms-input-placeholder {
+          color: black;
+          opacity: 0.4;
+        }
+      }
+
+      ul.select2-results__options {
+        background: white;
+        color: rgba(black, 0.9);
+        transition: all 0.4s;
+
+        li.select2-results__option--selected,
+        li:hover,
+        li:active,
+        li:focus {
+          background: #531e8e !important;
+          color: white !important;
+        }
+      }
+
+      .select2-selection__arrow {
+        background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='8' height='7' viewBox='0 0 8 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M3.44636 2L4.55364 2L4 2.96887L3.44636 2Z' stroke='%23440090' stroke-width='4'/%3e%3c/svg%3e ")
+          no-repeat center;
+      }
+    }
+  }
+}

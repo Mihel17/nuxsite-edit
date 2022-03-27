@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+// WRAPPER
+
+.container.container--pricing {
+  display: grid;
+  gap: 10px;
+  padding-bottom: 66px;
+
+  @media (min-width: $desktop) {
+    gap: 30px;
+  }
+}
+
+.container {
+  max-width: 1230px;
+  width: 100%;
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+
+//H1-H6
+.gradient,
+h1.gradient,
+h2.gradient,
+h3.gradient {
+  background: -webkit-linear-gradient(-270deg, #0b0229 2.59%, #732efb 81.2%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+h1,
+.h1 {
+  font-family: $font;
+  line-height: 50px;
+  font-size: 50px;
+  font-weight: 700;
+  color: $main-color;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 70px;
+    line-height: 143%;
+  }
+}
+
+//INPUT
+
+input {
+  width: 100%;
+}
+
+// HIDE / SHOW
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+// IMG
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+// BTN
+
+// LINK
+
+.no-style {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+// NORMILIZE AND CUSTOMIZE
+
+//-----------------------------------

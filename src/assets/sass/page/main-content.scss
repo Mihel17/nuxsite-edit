@@ -1,0 +1,61 @@
+.main-content {
+  overflow: hidden;
+  display: grid;
+  gap: 30px;
+}
+
+.main-content--about {
+  background: $bg;
+  gap: 0;
+
+  .topHeader {
+    padding-top: 75px;
+    color: white;
+
+    @media (min-width: $tablet) {
+      padding-top: 58px;
+    }
+
+    @media (min-width: 992px) {
+      padding-top: 117px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-top: 115px;
+    }
+
+    ul.breadCrumbs li a,
+    ul.breadCrumbs li span,
+    ul.breadCrumbs li::after {
+      color: white;
+    }
+  }
+
+  section.readyToStart {
+    background: #000017;
+    position: relative;
+
+    h2 span:nth-child(2) {
+      color: transparent !important;
+      -webkit-text-fill-color: transparent !important;
+    }
+
+    .animationsWrapper {
+      display: none;
+    }
+
+    &::after {
+      content: "";
+      display: grid;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background: rgba($purple, 0.6);
+    }
+  }
+}
+
+.main-content--about + footer {
+  background: #000017;
+}

@@ -1,0 +1,12 @@
+body .title--about {
+  color: white;
+
+  @media (min-width: $tablet) {
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 23px;
+    margin-bottom: 9px;
+  }
+}

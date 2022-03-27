@@ -1,0 +1,88 @@
+.more-info {
+  background: url("../assets/img/more-info-bg.webp") no-repeat center;
+  background-size: cover;
+
+  .more-info__container {
+    padding-top: 75px;
+    padding-bottom: 59px;
+
+    @media (min-width: $tablet) {
+      font-size: 16px;
+      padding-top: 100px;
+      padding-bottom: 75px;
+    }
+  }
+}
+
+.more-info__title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  color: white;
+  margin: 0;
+}
+
+.more-info__title2 {
+  margin-left: 47px;
+}
+
+.more-info__text {
+  color: rgba(white, 0.7);
+
+  @media (min-width: $desktop) {
+    min-width: 386px;
+    width: 386px;
+  }
+}
+
+.more-info__list {
+  display: grid;
+  gap: 45px;
+
+  @media (min-width: $tablet) {
+    gap: 65px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      ". item1 item1"
+      "item2 item2 ."
+      ". item3 item3";
+    gap: 120px;
+  }
+}
+
+.more-info__item {
+  display: grid;
+  gap: 30px;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: max-content 1fr;
+    gap: 85px;
+  }
+}
+
+.more-info__item:first-child {
+  @media (min-width: $desktop) {
+    grid-area: item1;
+  }
+}
+
+.more-info__item:nth-child(2) {
+  @media (min-width: $desktop) {
+    grid-area: item2;
+  }
+}
+
+.more-info__item:last-child {
+  @media (min-width: $desktop) {
+    grid-area: item3;
+  }
+}

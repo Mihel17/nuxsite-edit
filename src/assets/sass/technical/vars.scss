@@ -1,0 +1,60 @@
+// COLOR------------------------------
+$main-color: #440090;
+$purple: #5036c2;
+$light-purple: #7c7cff;
+$black: rgba(black, 0.7);
+$bg: #000911;
+//-----------------------------------
+
+//RADIUS-------------------------------
+$r: 5px;
+//-----------------------------------
+
+//PADDING-------------------------------
+$p1: 1em;
+$p2: 1em;
+$p3: 1em;
+//-----------------------------------
+
+//SECTION PADDING-------------------------------
+$sp: 30px;
+$sp1: 60px;
+$sp2: 60px;
+$sp3: 90px;
+//-----------------------------------
+
+//BUTTON-------------------------------
+$br: 5px;
+$min-height-button: 48px;
+//-----------------------------------
+
+//FONT SIZE-------------------------------
+// $h1: calc(1.575rem + 2vw) !important;
+// $h2: 1.5rem !important;
+// $h3: 18px !important;
+// $small-text: 14px !important;
+//-----------------------------------
+
+//FONT-------------------------------
+$font: "Montserrat", -apple-system, "BlinkMacSystemFontb", "Segoe UI", helvetica, arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol";
+//-----------------------------------
+
+//MEDIA------------------------------
+// breakpoints
+$xs: 320px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1440px;
+$xxl: 1919px;
+
+$mobile: $xs;
+$mobile2: $sm;
+$tablet: $md;
+$tablet2: $lg;
+$desktop: $xl;
+$desktop2: $xxl;
+//----------------------------------
+
+//END------------------------------

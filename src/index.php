@@ -23,7 +23,7 @@
   <?php require 'layout/TEST/GET_FROM_BACKEND_footer.php'; ?>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="js/slick.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
   <script src="js/script.js" type="module">
   </script>
 </body>
